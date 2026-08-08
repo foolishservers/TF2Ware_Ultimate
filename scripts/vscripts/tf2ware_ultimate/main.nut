@@ -1154,7 +1154,7 @@ function Ware_BeginSpecialRoundInternal()
 				Ware_SpecialRoundRotation = Ware_SpecialRounds
 			}
 		
-			if (RandomInt(1, 3) == 1 && Ware_SpecialRounds.find("double_trouble") != null)
+			if (Ware_SpecialRounds.find("double_trouble") != null)
 			{
 				round = "double_trouble"
 				RemoveElementIfFound(Ware_SpecialRoundRotation, "double_trouble")
