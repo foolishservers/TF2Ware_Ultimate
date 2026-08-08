@@ -74,6 +74,11 @@ word_timer <- null
 median_score <- 0
 game_over <- false
 
+function OnPick()
+{
+	return !Ware_IsSpecialRoundSet("hale") // disabled due to text channel conflict
+}
+
 function OnPrecache()
 {
 	PrecacheScriptSound(sound_boss_start)

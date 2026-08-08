@@ -1154,7 +1154,15 @@ function Ware_BeginSpecialRoundInternal()
 				Ware_SpecialRoundRotation = Ware_SpecialRounds
 			}
 		
-			round = RemoveRandomElement(Ware_SpecialRoundRotation)
+			if (RandomInt(1, 3) == 1 && Ware_SpecialRounds.find("double_trouble") != null)
+			{
+				round = "double_trouble"
+				RemoveElementIfFound(Ware_SpecialRoundRotation, "double_trouble")
+			}
+			else
+			{
+				round = RemoveRandomElement(Ware_SpecialRoundRotation)
+			}
 		}
 		
 		local scope = Ware_LoadSpecialRound(round, player_count, is_forced)

@@ -28,15 +28,15 @@ colors <-
 
 text_colors <-
 [
-	"WHITE"
-	"RED"
-	"YELLOW" // yellow is more distinguishable than green for colorblind players
-	"BLUE"
-	"GREEN"
-	"BLACK"
-	"MAGENTA"
-	"CYAN"
-	"ORANGE"
+	"하양"
+	"빨강"
+	"노랑" // yellow is more distinguishable than green for colorblind players
+	"파랑"
+	"연두"
+	"검정"
+	"마젠타"
+	"시안"
+	"오렌지"
 ]
 
 function OnPick()
@@ -66,7 +66,8 @@ function OnStart()
 
 function OnEnd()
 {
-	Ware_ChatPrint(null, "The correct answer was {color}{str}", CONST["COLOR_" + answer], answer)
+	//Ware_ChatPrint(null, "The correct answer was {color}{str}", CONST["COLOR_" + answer], answer)
+	Ware_ChatPrint(null, "The correct answer was {str}", answer)
 }
 
 function OnPlayerSay(player, text)
