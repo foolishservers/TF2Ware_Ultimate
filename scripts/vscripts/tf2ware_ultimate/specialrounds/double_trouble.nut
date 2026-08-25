@@ -66,13 +66,13 @@ function OnPick()
 	{
 		local random = RandomFloat(0.0, 1.0)
 		// triple trouble???
-		if (random <= 0.5)
+		if (random <= 1.0)
 			desired_count++
 		// quadruple trouble????
-		if (random <= 0.2)
+		if (random <= 0.5)
 			desired_count++
 		// ULTRA TROUBLE!!!!
-		if (random <= 0.1)
+		if (random <= 0.3)
 			desired_count++			
 	}
 
